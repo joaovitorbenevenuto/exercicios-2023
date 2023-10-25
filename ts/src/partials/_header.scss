@@ -1,0 +1,127 @@
+header {
+    background-color: $background_header;
+    width: 1146px;
+    height: 68px;
+    left: 220px;
+    box-sizing: border-box;
+    position: relative;
+
+    .header-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-texts {
+        color: $text_header;
+        margin-right: 110px;
+        font-family: Roboto;
+        font-weight: 400;
+        letter-spacing: 0em;
+        margin-left: 36px;
+
+        h3 {
+            width: 391px;
+            height: 16px;
+            top: 5px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        h2 {
+            width: 643px;
+            height: 26px;
+            top: 23px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        h4 {
+            width: 105px;
+            height: 16px;
+            top: 48px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .header-button {
+        width: 97px;
+        height: 34px;
+        left: 789px;
+        border-radius: 3px;
+        border: 1px solid #CCCCCC;
+         align-items: center;
+         display: flex;
+        
+        .pt-br {
+            width: 42px;
+            height: 18px;
+            margin-left: 0px;
+            color: #333;
+            font-family: Quicksand;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+            .header-icon-language {
+                 position: relative;
+                width: 22px;
+                height: 21px;
+                margin-left: 3px;
+
+            }
+
+            .header-icon-dropdown {
+                width: 8px;
+                height: 6px;
+                position: relative;
+                margin-left: 3px;
+                border: 1px;
+                fill: #333;
+                stroke-width: 1px;
+                stroke: #333;
+            }
+    }
+
+    .header-user {
+        display: flex;
+        align-items: center;
+        margin-left: 22px;
+
+        .text-user ul {
+            color: #333;
+            text-align: end;
+            font-family: Quicksand;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            list-style: none;
+        }
+
+        .header-image-login-user {
+            width: 40px;
+            height: 30px;
+            flex-shrink: 0;
+            background-image: url("/ts/src/assets/images/content/master-image.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-left: 2px;
+        }
+
+        .header-image-login-notification {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            top: 10px;
+            margin-left: 218px;
+            border-radius: 10px;
+            gap: 10px;
+            // position: absolute;
+        }
+    }
+
+}
