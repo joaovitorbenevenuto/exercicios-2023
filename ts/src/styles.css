@@ -472,31 +472,34 @@ content .discussion .discussion-icons .icon-3 {
   height: 48.935px;
   flex-shrink: 0;
 }
-content .discussion #new-topic {
+content .discussion .new-topic {
   width: 133px;
   height: 32px;
   flex-shrink: 0;
-  fill: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+}
+content .discussion .new-topic #button-create {
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
   display: flex;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin-top: 14px;
+  margin-left: 463px;
+  width: 133px;
+  height: 32px;
+  justify-content: center;
+  text-align: center;
 }
-content .discussion #new-topic .button-create {
-  position: absolute;
-  top: 14px;
-  left: 463px;
-}
-content .discussion #new-topic .icon-create {
-  position: absolute;
+content .discussion .new-topic .icon-create {
   width: 17px;
   height: 17px;
-  top: 22px;
-  left: 477px;
+  margin-top: 8px;
+  margin-left: px;
   flex-shrink: 0;
 }
-content .discussion #new-topic .c {
-  position: relative;
-  top: 21px;
-  left: 500px;
+content .discussion .new-topic .c {
+  margin-top: 7px;
+  margin-left: 6px;
   color: #FFF;
   text-align: center;
   font-family: Quicksand;
@@ -505,19 +508,29 @@ content .discussion #new-topic .c {
   font-weight: 700;
   line-height: 16px;
 }
+content .discussion hr {
+  position: absolute;
+  width: 1027px;
+  height: 0px;
+  top: 1112px;
+  margin-left: 16px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  opacity: 30%;
+  z-index: -1;
+}
 content .discussion .topic-1 {
-  position: relative;
   width: 1028px;
   height: 148px;
-  top: 30px;
-  left: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #E7E7E7;
   background: #FFF;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
 }
-content .discussion .topic-1 .a {
+content .discussion .topic-1 .subject {
   margin-top: 17px;
   margin-left: 24.17px;
   color: #ED7839;
@@ -527,7 +540,7 @@ content .discussion .topic-1 .a {
   font-weight: 700;
   line-height: normal;
 }
-content .discussion .topic-1 .b {
+content .discussion .topic-1 .author {
   width: 542.071px;
   margin-left: 24.17px;
   color: #5C5C5C;
@@ -537,7 +550,7 @@ content .discussion .topic-1 .b {
   font-weight: 500;
   line-height: normal;
 }
-content .discussion .topic-1 .c {
+content .discussion .topic-1 .content {
   width: 980.669px;
   margin-top: 17px;
   margin-left: 24.17px;
@@ -548,28 +561,34 @@ content .discussion .topic-1 .c {
   font-weight: 400;
   line-height: normal;
 }
+content .discussion .topic-1 .reacts-topic {
+  display: flex;
+}
 content .discussion .topic-1 .information {
-  position: absolute;
   width: 4px;
   height: 18px;
   flex-shrink: 0;
-  top: 112px;
-  left: 24px;
+  margin-top: 12px;
+  margin-left: 24px;
 }
 content .discussion .topic-1 .like-button {
-  position: absolute;
+  background: #ED7839;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
   width: 27px;
   height: 19px;
   flex-shrink: 0;
-  top: 111px;
-  left: 43px;
+  margin-top: 11px;
+  margin-left: 15px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2392156863);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 10%;
+  justify-content: center;
+  text-align: center;
 }
 content .discussion .topic-1 .like-heart {
-  position: absolute;
-  top: 114px;
-  left: 49px;
   width: 14px;
   height: 14px;
+  margin-top: 3px;
   font-family: Material Icons;
   font-size: 14px;
   font-style: normal;
@@ -577,9 +596,8 @@ content .discussion .topic-1 .like-heart {
   line-height: normal;
 }
 content .discussion .topic-1 .count-like {
-  position: absolute;
-  top: 111px;
-  left: 85px;
+  margin-top: 11px;
+  margin-left: 15px;
   color: #757575;
   font-family: Segoe UI;
   font-size: 14px;
@@ -588,9 +606,8 @@ content .discussion .topic-1 .count-like {
   line-height: normal;
 }
 content .discussion .topic-1 .count-answer {
-  position: absolute;
-  top: 111px;
-  left: 129px;
+  margin-top: 11px;
+  margin-left: 15px;
   color: #757575;
   font-family: Segoe UI;
   font-size: 14px;
@@ -599,18 +616,17 @@ content .discussion .topic-1 .count-answer {
   line-height: normal;
 }
 content .discussion .topic-2 {
-  position: relative;
   width: 1028px;
   height: 148px;
-  top: 35px;
-  left: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #E7E7E7;
   background: #FFF;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
 }
-content .discussion .topic-2 .a {
+content .discussion .topic-2 .subject {
   margin-top: 17px;
   margin-left: 24.17px;
   color: #ED7839;
@@ -620,7 +636,7 @@ content .discussion .topic-2 .a {
   font-weight: 700;
   line-height: normal;
 }
-content .discussion .topic-2 .b {
+content .discussion .topic-2 .author {
   width: 542.071px;
   margin-left: 24.17px;
   color: #5C5C5C;
@@ -630,7 +646,7 @@ content .discussion .topic-2 .b {
   font-weight: 500;
   line-height: normal;
 }
-content .discussion .topic-2 .c {
+content .discussion .topic-2 .content {
   width: 980.669px;
   margin-top: 17px;
   margin-left: 24.17px;
@@ -641,28 +657,34 @@ content .discussion .topic-2 .c {
   font-weight: 400;
   line-height: normal;
 }
+content .discussion .topic-2 .reacts-topic {
+  display: flex;
+}
 content .discussion .topic-2 .information {
-  position: absolute;
   width: 4px;
   height: 18px;
   flex-shrink: 0;
-  top: 112px;
-  left: 24px;
+  margin-top: 12px;
+  margin-left: 24px;
 }
 content .discussion .topic-2 .like-button {
-  position: absolute;
+  background: #ED7839;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
   width: 27px;
   height: 19px;
   flex-shrink: 0;
-  top: 111px;
-  left: 43px;
+  margin-top: 11px;
+  margin-left: 15px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2392156863);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 10%;
+  justify-content: center;
+  text-align: center;
 }
 content .discussion .topic-2 .like-heart {
-  position: absolute;
-  top: 114px;
-  left: 49px;
   width: 14px;
   height: 14px;
+  margin-top: 3px;
   font-family: Material Icons;
   font-size: 14px;
   font-style: normal;
@@ -670,9 +692,8 @@ content .discussion .topic-2 .like-heart {
   line-height: normal;
 }
 content .discussion .topic-2 .count-like {
-  position: absolute;
-  top: 111px;
-  left: 85px;
+  margin-top: 11px;
+  margin-left: 15px;
   color: #757575;
   font-family: Segoe UI;
   font-size: 14px;
@@ -681,9 +702,8 @@ content .discussion .topic-2 .count-like {
   line-height: normal;
 }
 content .discussion .topic-2 .count-answer {
-  position: absolute;
-  top: 111px;
-  left: 129px;
+  margin-top: 11px;
+  margin-left: 15px;
   color: #757575;
   font-family: Segoe UI;
   font-size: 14px;
@@ -693,10 +713,11 @@ content .discussion .topic-2 .count-answer {
 }
 
 footer {
+  position: absolute;
   width: 1086px;
   height: 181px;
-  margin-top: 50px;
-  margin-left: 234px;
+  margin-top: 65px;
+  left: 234px;
 }
 
 .side-details .side-details-buttons {

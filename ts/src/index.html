@@ -143,57 +143,60 @@
         </div>
         <p class="text-1">Compartilhe suas ideias ou dúvidas com os autores!</p>
         <div class="discussion-icons">
-        <img class="icon-1" src="/ts/src/assets/icons/content/icone-1.svg">
-        <img class="icon-2" src="/ts/src/assets/icons/content/icone-2.svg">
-        <img class="icon-3" src="/ts/src/assets/icons/content/icone-3.svg">
-      </div>
+          <img class="icon-1" src="/ts/src/assets/icons/content/icone-1.svg">
+          <img class="icon-2" src="/ts/src/assets/icons/content/icone-2.svg">
+          <img class="icon-3" src="/ts/src/assets/icons/content/icone-3.svg">
+        </div>
         <p class="text-2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe
           seus questionamentos ou sugestões para o autor!</p>
 
-        <button id="new-topic" onclick="criarNovoTopico">
-          <img class="button-create" src="/ts/src/assets/icons/content/button-bg.svg">
-          <img class="icon-create" src="/ts/src/assets/icons/content/icon-criar.svg">
-          <p class="c">criar tópico</p>
-        </button>
-        <hr>
+        <div class="new-topic">
+          <button id="button-create" onclick="criarNovoTopico">
+            <!-- <img class="button-create" src="/ts/src/assets/icons/content/button-bg.svg"> -->
+            <img class="icon-create" src="/ts/src/assets/icons/content/icon-criar.svg">
+            <p class="c">criar tópico</p>
+          </button>
+          <hr>
+        </div>
         <!-- <div class="feedback">
           <img class="feedback-logo">
           <p></p>
           <a></a>
         </div>-->
-        <div class="topic-1">
-          <p class="a">Assunto da pergunta aparece aqui</p>
-          <p class="b">Carlos Henrique Santos</p>
-          <p class="c">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e
+        <section class="topic-1">
+          <p class="subject">Assunto da pergunta aparece aqui</p>
+          <p class="author">Carlos Henrique Santos</p>
+          <p class="content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+            dimensão e
             impacto de processo formativo situado impacto de processo formativo processo...</p>
-          <a>
-            <img class="information" src="/ts/src/assets/icons/content/mais-informaes.svg">
-          </a><a>
-            <img class="like-button" src="/ts/src/assets/icons/content/button-like.svg">
-          </a>
-          <img class="like-heart" src="/ts/src/assets/icons/content/green-apples-22.png">
-          <span class="count-like"> 1 like</span>
-          <span class="count-answer"> 1 resposta</span>
-        </div>
-        <div class="topic-2">
-          <p class="a">Assunto da pergunta aparece aqui</p>
-          <p class="b">Carlos Henrique Santos</p>
-          <p class="c">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e
+          <div class="reacts-topic">
+            <a>
+              <img class="information" src="/ts/src/assets/icons/content/mais-informaes.svg">
+            </a><a class="like-button">
+              <img class="like-heart" src="/ts/src/assets/icons/content/green-apples-22.png">
+            </a>
+            <span class="count-like"> 1 like</span>
+            <span class="count-answer"> 1 resposta</span>
+          </div>
+        </section>
+        <section class="topic-2">
+          <p class="subject">Assunto da pergunta aparece aqui</p>
+          <p class="author">Carlos Henrique Santos</p>
+          <p class="content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+            dimensão e
             impacto de processo formativo situado impacto de processo formativo processo...</p>
-          <a>
-            <img class="information" src="/ts/src/assets/icons/content/mais-informaes.svg">
-          </a><a>
-            <img class="like-button" src="/ts/src/assets/icons/content/button-like.svg">
-          </a>
-          <img class="like-heart" src="/ts/src/assets/icons/content/green-apples-22.png">
-          <span class="count-like"> 1 like</span>
-          <span class="count-answer"> 1 resposta</span>
-        </div>
-      </section>
-
-      <img class="footer">
+          <div class="reacts-topic">
+            <a>
+              <img class="information" src="/ts/src/assets/icons/content/mais-informaes.svg">
+            </a><a class="like-button">
+              <img class="like-heart" src="/ts/src/assets/icons/content/green-apples-22.png">
+            </a>
+            <span class="count-like"> 1 like</span>
+            <span class="count-answer"> 1 resposta</span>
+          </div>
+        </section>
+      </content>
       <footer><img src="/ts/src/assets/images/footer/imagem-footer.png"></footer>
-    </content>
     <script src="ts/src/script.js"></script>
   </app-root>
 </body>

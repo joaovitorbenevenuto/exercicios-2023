@@ -253,12 +253,9 @@ content {
         }
 
         .discussion-icons {
-            // justify-content: center;
             display: flex;
-            // width: 158px;
 
             .icon-1 {
-                // position: absolute;
                 margin-top: 27px;
                 margin-left: 402.05px;
                 width: 50.26px;
@@ -268,7 +265,6 @@ content {
             }
 
             .icon-2 {
-                // position: absolute;
                 margin-top: 27px;
                 margin-left: 51.74px;
                 width: 50.26px;
@@ -278,7 +274,6 @@ content {
             }
 
             .icon-3 {
-                // position: absolute;
                 margin-top: 27px;
                 margin-left: 53.74px;
                 width: 50.26px;
@@ -288,35 +283,43 @@ content {
             }
         }
 
-        #new-topic {
+        .new-topic {
             width: 133px;
             height: 32px;
             flex-shrink: 0;
-            fill: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
-            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
-            display: flex;
+            // display: flex;
 
-            .button-create {
-                position: absolute;
-                top: 14px;
-                left: 463px;
+            #button-create {
+                background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+                filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
+                display: flex;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.00);
+                margin-top: 14px;
+                margin-left: 463px;
+                width: 133px;
+                height: 32px;
+                justify-content: center;
+                text-align: center;
+                //  position: absolute;
+
 
             }
 
 
             .icon-create {
-                position: absolute;
+                // positio  n: absolute;
                 width: 17px;
                 height: 17px;
-                top: 22px;
-                left: 477px;
+                margin-top: 8px;
+                margin-left: px;
                 flex-shrink: 0;
             }
 
             .c {
-                position: relative;
-                top: 21px;
-                left: 500px;
+                // position: relative;
+                margin-top: 7px;
+                margin-left: 6px;
                 color: #FFF;
                 text-align: center;
                 font-family: Quicksand;
@@ -329,19 +332,30 @@ content {
 
         }
 
+        hr {
+            position: absolute;
+            width: 1027px;
+            height: 0px;
+            top: 1112px;
+            margin-left: 16px;
+            flex-shrink: 0;
+            stroke-width: 1px;
+            opacity: 30%;
+            z-index: -1;
+        }
+
         .topic-1 {
-            position: relative;
             width: 1028px;
             height: 148px;
-            top: 30px;
-            left: 15px;
+            margin-top: 15px;
+            margin-left: 15px;
             flex-shrink: 0;
             border-radius: 4px;
             border: 1px solid #E7E7E7;
             background: #FFF;
             box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
 
-            .a {
+            .subject {
                 margin-top: 17px;
                 margin-left: 24.17px;
                 color: #ED7839;
@@ -352,7 +366,7 @@ content {
                 line-height: normal;
             }
 
-            .b {
+            .author {
                 width: 542.071px;
                 margin-left: 24.17px;
                 color: #5C5C5C;
@@ -363,7 +377,7 @@ content {
                 line-height: normal;
             }
 
-            .c {
+            .content {
                 width: 980.669px;
                 margin-top: 17px;
                 margin-left: 24.17px;
@@ -375,31 +389,37 @@ content {
                 line-height: normal;
             }
 
+            .reacts-topic {
+                display: flex;
+            }
+
             .information {
-                position: absolute;
                 width: 4px;
                 height: 18px;
                 flex-shrink: 0;
-                top: 112px;
-                left: 24px;
+                margin-top: 12px;
+                margin-left: 24px;
             }
 
             .like-button {
-                position: absolute;
+                background: #ED7839;
+                filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
                 width: 27px;
                 height: 19px;
                 flex-shrink: 0;
-                top: 111px;
-                left: 43px;
+                margin-top: 11px;
+                margin-left: 15px;
+                box-shadow: 0px 2px 2px 0px #0000003D;
+                box-shadow: 0px 0px 2px 0px #0000001F;
+                border-radius: 10%;
+                justify-content: center;
+                text-align: center;
             }
 
             .like-heart {
-                position: absolute;
-                top: 114px;
-                left: 49px;
                 width: 14px;
                 height: 14px;
-
+                margin-top: 3px;
                 font-family: Material Icons;
                 font-size: 14px;
                 font-style: normal;
@@ -409,9 +429,8 @@ content {
             }
 
             .count-like {
-                position: absolute;
-                top: 111px;
-                left: 85px;
+                margin-top: 11px;
+                margin-left: 15px;
                 color: #757575;
                 font-family: Segoe UI;
                 font-size: 14px;
@@ -421,9 +440,8 @@ content {
             }
 
             .count-answer {
-                position: absolute;
-                top: 111px;
-                left: 129px;
+                margin-top: 11px;
+                margin-left: 15px;
                 color: #757575;
                 font-family: Segoe UI;
                 font-size: 14px;
@@ -434,18 +452,17 @@ content {
         }
 
         .topic-2 {
-            position: relative;
             width: 1028px;
             height: 148px;
-            top: 35px;
-            left: 15px;
+            margin-top: 15px;
+            margin-left: 15px;
             flex-shrink: 0;
             border-radius: 4px;
             border: 1px solid #E7E7E7;
             background: #FFF;
             box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
 
-            .a {
+            .subject {
                 margin-top: 17px;
                 margin-left: 24.17px;
                 color: #ED7839;
@@ -456,7 +473,7 @@ content {
                 line-height: normal;
             }
 
-            .b {
+            .author {
                 width: 542.071px;
                 margin-left: 24.17px;
                 color: #5C5C5C;
@@ -467,7 +484,7 @@ content {
                 line-height: normal;
             }
 
-            .c {
+            .content {
                 width: 980.669px;
                 margin-top: 17px;
                 margin-left: 24.17px;
@@ -479,32 +496,37 @@ content {
                 line-height: normal;
             }
 
+            .reacts-topic {
+                display: flex;
+            }
+
             .information {
-                position: absolute;
                 width: 4px;
                 height: 18px;
                 flex-shrink: 0;
-                top: 112px;
-                left: 24px;
+                margin-top: 12px;
+                margin-left: 24px;
             }
 
             .like-button {
-                position: absolute;
+                background: #ED7839;
+                filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
                 width: 27px;
                 height: 19px;
                 flex-shrink: 0;
-                top: 111px;
-                left: 43px;
+                margin-top: 11px;
+                margin-left: 15px;
+                box-shadow: 0px 2px 2px 0px #0000003D;
+                box-shadow: 0px 0px 2px 0px #0000001F;
+                border-radius: 10%;
+                justify-content: center;
+                text-align: center;
             }
 
             .like-heart {
-                position: absolute;
-                top: 114px;
-                left: 49px;
                 width: 14px;
                 height: 14px;
-
-                // background-color: black;
+                margin-top: 3px;
                 font-family: Material Icons;
                 font-size: 14px;
                 font-style: normal;
@@ -514,9 +536,8 @@ content {
             }
 
             .count-like {
-                position: absolute;
-                top: 111px;
-                left: 85px;
+                margin-top: 11px;
+                margin-left: 15px;
                 color: #757575;
                 font-family: Segoe UI;
                 font-size: 14px;
@@ -526,9 +547,8 @@ content {
             }
 
             .count-answer {
-                position: absolute;
-                top: 111px;
-                left: 129px;
+                margin-top: 11px;
+                margin-left: 15px;
                 color: #757575;
                 font-family: Segoe UI;
                 font-size: 14px;
@@ -542,10 +562,9 @@ content {
 }
 
 footer {
+    position: absolute;
     width: 1086px;
     height: 181px;
-    
-
-    margin-top: 50px;
-    margin-left: 234px;
+    margin-top: 65px;
+    left: 234px;
 }
