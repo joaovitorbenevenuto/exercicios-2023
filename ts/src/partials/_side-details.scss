@@ -5,11 +5,12 @@
         margin-top: 20px;
 
         .button-download {
-            position: relative;
+
             width: 120px;
             height: 31px;
-            left: 1090px;
-            display: inline-flex;
+            margin-left: 56px;
+            margin-top: 0px;
+            display: flex;
             padding: 6px 12px;
             justify-content: center;
             align-items: flex-start;
@@ -32,7 +33,7 @@
 
         .button-favorite {
             display: flex;
-            position: absolute;
+            margin-left: 5px;
             width: 43px;
             height: 31px;
             right: 93px;
@@ -46,11 +47,11 @@
         }
 
         .button-doi {
-            position: absolute;
             display: flex;
             width: 43px;
             height: 31px;
             right: 45px;
+            margin-left: 5px;
             padding: 6px 12px;
             justify-content: center;
             align-items: center;
@@ -62,10 +63,10 @@
     }
 
     .details {
+        margin-left: 31px;
 
         .citacao {
             margin-top: 12px;
-            margin-right: 44px;
             color: #ED7839;
             text-align: right;
             font-family: Roboto;
@@ -73,12 +74,10 @@
             font-style: normal;
             font-weight: 500;
             line-height: 25px;
-            /* 178.571% */
             letter-spacing: 0.7px;
         }
 
         .painel {
-            position: absolute;
             width: 242px;
             height: 439px;
             margin-top: 5px;
@@ -96,10 +95,9 @@
                 background: #FDF1EB;
 
                 .header-text {
-                    position: relative;
                     width: 212px;
                     height: 25px;
-                    top: 11px;
+                    margin-top: 11px;
                     margin-left: 15px;
                     flex-shrink: 0;
                     color: #4E4E4E;
@@ -108,7 +106,6 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 25px;
-                    /* 125% */
                 }
             }
 
@@ -117,12 +114,10 @@
                 margin-top: 15px;
                 margin-left: 15px;
                 display: flex;
-                // flex-direction: column;
                 width: 212px;
                 height: 364px;
                 flex-shrink: 0;
                 text-align: left;
-
             }
 
             .e {
@@ -144,7 +139,6 @@
             }
 
             .referencias {
-                position: relative;
                 margin-top: 15px;
                 margin-left: 15px;
                 list-style: none;
@@ -157,7 +151,6 @@
                 letter-spacing: 0.24px;
             }
 
-
             // .painel-scroll {
             //     .rentangle-out{
 
@@ -166,12 +159,6 @@
 
             //     }
             // }
-
-
-
-
         }
-
     }
-
 }

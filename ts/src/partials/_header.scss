@@ -2,9 +2,8 @@ header {
     background-color: $background_header;
     width: 1146px;
     height: 68px;
-    left: 220px;
+    margin-left: 220px;
     box-sizing: border-box;
-    position: relative;
 
     .header-bar {
         display: flex;
@@ -13,7 +12,6 @@ header {
 
     .header-texts {
         color: $text_header;
-        margin-right: 110px;
         font-family: Roboto;
         font-weight: 400;
         letter-spacing: 0em;
@@ -47,12 +45,20 @@ header {
     .header-button {
         width: 97px;
         height: 34px;
-        left: 789px;
+        top: 17px;
+        margin-left: 110px;
         border-radius: 3px;
         border: 1px solid #CCCCCC;
-         align-items: center;
-         display: flex;
-        
+        align-items: center;
+        display: flex;
+
+        .header-icon-language {
+            width: 22px;
+            height: 21px;
+            margin-left: 9px;
+
+        }
+       
         .pt-br {
             width: 42px;
             height: 18px;
@@ -65,24 +71,17 @@ header {
             line-height: normal;
         }
 
-            .header-icon-language {
-                 position: relative;
-                width: 22px;
-                height: 21px;
-                margin-left: 3px;
+       
 
-            }
-
-            .header-icon-dropdown {
-                width: 8px;
-                height: 6px;
-                position: relative;
-                margin-left: 3px;
-                border: 1px;
-                fill: #333;
-                stroke-width: 1px;
-                stroke: #333;
-            }
+        .header-icon-dropdown {
+            width: 8px;
+            height: 6px;
+            margin-left: 5px;
+            border: 1px;
+            fill: #333;
+            stroke-width: 1px;
+            stroke: #333;
+        }
     }
 
     .header-user {
@@ -120,7 +119,6 @@ header {
             margin-left: 218px;
             border-radius: 10px;
             gap: 10px;
-            // position: absolute;
         }
     }
 

@@ -1,12 +1,19 @@
 content {
+
+    .first-information {
+        width: 1059px;
+        flex-shrink: 0;
+        display: flex;
+    }
+
     .center-information {
         h1 {
-            position: absolute;
+            display: flex;
             width: 786px;
             height: 54px;
             flex-shrink: 0;
-            top: 88px;
-            left: 263px;
+            margin-top: 20px;
+            margin-left: 263px;
             color: #ED7839;
             font-family: Roboto;
             font-size: 20px;
@@ -96,8 +103,8 @@ content {
                 // z-index: 1;
             }
 
-           
-            
+
+
 
             .video-photo-1 {
                 position: absolute;
@@ -111,7 +118,7 @@ content {
 
                 left: 35.57px;
                 top: 305.26px;
-               
+
             }
 
             .video-photo-2 {
@@ -127,11 +134,11 @@ content {
     }
 
     .resume {
-        position: absolute;
+        // position: absolute;
         width: 1058px;
         height: 189px;
-        top: 630px;
-        right: 45px;
+        margin-top: 30px;
+        margin-left: 263px;
         flex-shrink: 0;
         border-radius: 3px;
         border: 1px solid #ECECEC;
@@ -170,8 +177,8 @@ content {
             font-weight: 400;
             line-height: 162.5%;
             letter-spacing: 0.28px;
-
         }
+
         #expand {
             color: #ED7839;
             font-family: Quicksand;
@@ -184,9 +191,10 @@ content {
     }
 
     .discussion {
-        position: absolute;
-        top: 849px;
-        right: 45px;
+        // display: flex;
+        // position: absolute;
+        margin-top: 30px;
+        margin-left: 263px;
         width: 1058px;
         height: 621px;
         flex-shrink: 0;
@@ -229,7 +237,7 @@ content {
         }
 
         .text-2 {
-            margin-top: 111px;
+            margin-top: 35px;
             margin-left: 216.5px;
             width: 626px;
             color: #595959;
@@ -244,34 +252,40 @@ content {
 
         }
 
-        .icon-1 {
-            position: absolute;
-            margin-top: 27px;
-            margin-left: 402.05px;
-            width: 50.26px;
-            height: 48.935px;
-            flex-shrink: 0;
+        .discussion-icons {
+            // justify-content: center;
+            display: flex;
+            // width: 158px;
 
-        }
+            .icon-1 {
+                // position: absolute;
+                margin-top: 27px;
+                margin-left: 402.05px;
+                width: 50.26px;
+                height: 48.935px;
+                flex-shrink: 0;
 
-        .icon-2 {
-            position: absolute;
-            margin-top: 27px;
-            left: 504.5px;
-            width: 50.26px;
-            height: 48.935px;
-            flex-shrink: 0;
+            }
 
-        }
+            .icon-2 {
+                // position: absolute;
+                margin-top: 27px;
+                margin-left: 51.74px;
+                width: 50.26px;
+                height: 48.935px;
+                flex-shrink: 0;
 
-        .icon-3 {
-            position: absolute;
-            margin-top: 27px;
-            left: 608px;
-            width: 50.26px;
-            height: 48.935px;
-            flex-shrink: 0;
+            }
 
+            .icon-3 {
+                // position: absolute;
+                margin-top: 27px;
+                margin-left: 53.74px;
+                width: 50.26px;
+                height: 48.935px;
+                flex-shrink: 0;
+
+            }
         }
 
         #new-topic {
@@ -386,7 +400,6 @@ content {
                 width: 14px;
                 height: 14px;
 
-                // background-color: black;
                 font-family: Material Icons;
                 font-size: 14px;
                 font-style: normal;
@@ -531,8 +544,8 @@ content {
 footer {
     width: 1086px;
     height: 181px;
-    position: absolute;
+    
 
-    top: 1520px;
+    margin-top: 50px;
     margin-left: 234px;
 }

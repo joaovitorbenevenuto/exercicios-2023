@@ -3,9 +3,8 @@ header {
   background-color: #FDF1EB;
   width: 1146px;
   height: 68px;
-  left: 220px;
+  margin-left: 220px;
   box-sizing: border-box;
-  position: relative;
 }
 header .header-bar {
   display: flex;
@@ -13,7 +12,6 @@ header .header-bar {
 }
 header .header-texts {
   color: #725C5C;
-  margin-right: 110px;
   font-family: Roboto;
   font-weight: 400;
   letter-spacing: 0em;
@@ -43,11 +41,17 @@ header .header-texts h4 {
 header .header-button {
   width: 97px;
   height: 34px;
-  left: 789px;
+  top: 17px;
+  margin-left: 110px;
   border-radius: 3px;
   border: 1px solid #CCCCCC;
   align-items: center;
   display: flex;
+}
+header .header-button .header-icon-language {
+  width: 22px;
+  height: 21px;
+  margin-left: 9px;
 }
 header .header-button .pt-br {
   width: 42px;
@@ -60,17 +64,10 @@ header .header-button .pt-br {
   font-weight: 400;
   line-height: normal;
 }
-header .header-button .header-icon-language {
-  position: relative;
-  width: 22px;
-  height: 21px;
-  margin-left: 3px;
-}
 header .header-button .header-icon-dropdown {
   width: 8px;
   height: 6px;
-  position: relative;
-  margin-left: 3px;
+  margin-left: 5px;
   border: 1px;
   fill: #333;
   stroke-width: 1px;
@@ -244,13 +241,18 @@ header .header-user .header-image-login-notification {
   line-height: normal;
 }
 
+content .first-information {
+  width: 1059px;
+  flex-shrink: 0;
+  display: flex;
+}
 content .center-information h1 {
-  position: absolute;
+  display: flex;
   width: 786px;
   height: 54px;
   flex-shrink: 0;
-  top: 88px;
-  left: 263px;
+  margin-top: 20px;
+  margin-left: 263px;
   color: #ED7839;
   font-family: Roboto;
   font-size: 20px;
@@ -346,11 +348,10 @@ content .center-information .video .video-photo-2 {
   top: 301px;
 }
 content .resume {
-  position: absolute;
   width: 1058px;
   height: 189px;
-  top: 630px;
-  right: 45px;
+  margin-top: 30px;
+  margin-left: 263px;
   flex-shrink: 0;
   border-radius: 3px;
   border: 1px solid #ECECEC;
@@ -397,9 +398,8 @@ content .resume #expand {
   letter-spacing: 0.28px;
 }
 content .discussion {
-  position: absolute;
-  top: 849px;
-  right: 45px;
+  margin-top: 30px;
+  margin-left: 263px;
   width: 1058px;
   height: 621px;
   flex-shrink: 0;
@@ -436,7 +436,7 @@ content .discussion .text-1 {
   line-height: normal;
 }
 content .discussion .text-2 {
-  margin-top: 111px;
+  margin-top: 35px;
   margin-left: 216.5px;
   width: 626px;
   color: #595959;
@@ -448,26 +448,26 @@ content .discussion .text-2 {
   line-height: 137.5%;
   /* 19.25px */
 }
-content .discussion .icon-1 {
-  position: absolute;
+content .discussion .discussion-icons {
+  display: flex;
+}
+content .discussion .discussion-icons .icon-1 {
   margin-top: 27px;
   margin-left: 402.05px;
   width: 50.26px;
   height: 48.935px;
   flex-shrink: 0;
 }
-content .discussion .icon-2 {
-  position: absolute;
+content .discussion .discussion-icons .icon-2 {
   margin-top: 27px;
-  left: 504.5px;
+  margin-left: 51.74px;
   width: 50.26px;
   height: 48.935px;
   flex-shrink: 0;
 }
-content .discussion .icon-3 {
-  position: absolute;
+content .discussion .discussion-icons .icon-3 {
   margin-top: 27px;
-  left: 608px;
+  margin-left: 53.74px;
   width: 50.26px;
   height: 48.935px;
   flex-shrink: 0;
@@ -695,8 +695,7 @@ content .discussion .topic-2 .count-answer {
 footer {
   width: 1086px;
   height: 181px;
-  position: absolute;
-  top: 1520px;
+  margin-top: 50px;
   margin-left: 234px;
 }
 
@@ -705,11 +704,11 @@ footer {
   margin-top: 20px;
 }
 .side-details .side-details-buttons .button-download {
-  position: relative;
   width: 120px;
   height: 31px;
-  left: 1090px;
-  display: inline-flex;
+  margin-left: 56px;
+  margin-top: 0px;
+  display: flex;
   padding: 6px 12px;
   justify-content: center;
   align-items: flex-start;
@@ -730,7 +729,7 @@ footer {
 }
 .side-details .side-details-buttons .button-favorite {
   display: flex;
-  position: absolute;
+  margin-left: 5px;
   width: 43px;
   height: 31px;
   right: 93px;
@@ -743,11 +742,11 @@ footer {
   background: #ED7839;
 }
 .side-details .side-details-buttons .button-doi {
-  position: absolute;
   display: flex;
   width: 43px;
   height: 31px;
   right: 45px;
+  margin-left: 5px;
   padding: 6px 12px;
   justify-content: center;
   align-items: center;
@@ -756,9 +755,11 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0);
   background: #ED7839;
 }
+.side-details .details {
+  margin-left: 31px;
+}
 .side-details .details .citacao {
   margin-top: 12px;
-  margin-right: 44px;
   color: #ED7839;
   text-align: right;
   font-family: Roboto;
@@ -766,11 +767,9 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
-  /* 178.571% */
   letter-spacing: 0.7px;
 }
 .side-details .details .painel {
-  position: absolute;
   width: 242px;
   height: 439px;
   margin-top: 5px;
@@ -788,10 +787,9 @@ footer {
   background: #FDF1EB;
 }
 .side-details .details .painel .painel-header .header-text {
-  position: relative;
   width: 212px;
   height: 25px;
-  top: 11px;
+  margin-top: 11px;
   margin-left: 15px;
   flex-shrink: 0;
   color: #4E4E4E;
@@ -800,7 +798,6 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
-  /* 125% */
 }
 .side-details .details .painel .details.text {
   position: relative;
@@ -829,7 +826,6 @@ footer {
   font-weight: 700;
 }
 .side-details .details .painel .referencias {
-  position: relative;
   margin-top: 15px;
   margin-left: 15px;
   list-style: none;
