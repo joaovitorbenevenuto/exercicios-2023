@@ -1,6 +1,4 @@
-// const expand = document.getElementById("expand")
 const newTopic = document.getElementsByClassName("button-create")
-// const sendButton = document.getElementsByClassName("send")
 let resume = document.getElementById('resume-text')
 let topicBase = document.getElementsByClassName("discussion-base")
 let creatingTopic = document.getElementsByClassName("creating-new-topic")
