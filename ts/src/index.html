@@ -152,7 +152,7 @@
           <p class="text-2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe
             seus questionamentos ou sugestões para o autor!</p>
           <div class="button-new-topic">
-            <button class="button-create" onclick="criarNovoTopico">
+            <button class="button-create" onclick="criarNovoTopico()">
               <img class="icon-create" src="/ts/src/assets/icons/content/icon-criar.svg">
               <p class="c">criar tópico</p>
             </button>
@@ -171,7 +171,7 @@
             <label class="conteudo" for="conteudo">Conteúdo
               <textarea id="conteudo" name="conteudo" input="submit">
               </textarea>
-              <div class="send-area"><button class="send">Enviar</button></div>
+              <div class="send-area"><button type="button" class="send" onclick="sendTopic()">Enviar</button></div>
             </label>
           </form>
           <!-- <div class="send-area"> <button class="send"></button></div> -->
@@ -181,7 +181,7 @@
           <p class="thanks">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu
             tópico for respondido!</p>
           <a class="discover">Descubra outros trabalhos!</a>
-          <button class="button-create-final" onclick="criarNovoTopico">
+          <button class="button-create-final" onclick="criarNovoTopico()">
             <p class="button-text">criar novo tópico</p>
           </button>
           <hr>

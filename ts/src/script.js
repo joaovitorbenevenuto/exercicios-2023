@@ -1,9 +1,13 @@
+// const expand = document.getElementById("expand")
+const newTopic = document.getElementsByClassName("button-create")
+// const sendButton = document.getElementsByClassName("send")
 let resume = document.getElementById('resume-text')
-let expand = document.getElementById("expand")
-let newTopic = document.getElementById("")
-// const topicos = document.getElementById("topicos")
-let resumoExpandido = false
-
+let topicBase = document.getElementsByClassName("discussion-base")
+let creatingTopic = document.getElementsByClassName("creating-new-topic")
+let topicCreated = document.getElementsByClassName("topic-sended")
+let feedback = document.getElementsByClassName("feedback")
+let subject = document.getElementById("assunto")
+let content = document.getElementById("conteudo")
 
 
 const expandResume = () => { 
@@ -25,19 +29,26 @@ const expandResume = () => {
 
 const criarNovoTopico = () => {
 
-     let assunto = prompt("Defina um tópico sucinto para notificar os autores...")
-     let conteudo = prompt("")
+     topicBase[0].style.display = "none"
 
-        let topico = document.createElement("div")
-        topico.className = "novo-topico"
+     topicCreated[0].style.display = "none"
 
-        let assuntoTopico = document.createElement("p")
-        assuntoTopico.innerText = assunto
+     feedback[0].style.display = "none"
 
-        let conteudoTopico = document.createElement("p")
-        conteudoTopico.innerText = conteudo
-
-        topico.appendChild(assuntoTopico)
-        topico.appendChild(conteudoTopico)
-        topico.appendChild(topico)
+     creatingTopic[0].style.display = "flex"
+     
+     subject.innerHTML = ""
+    
+     content.innerHTML = ""
 }
+
+const sendTopic = () =>{
+    
+     creatingTopic[0].style.display = "none"
+
+     topicCreated[0].style.display = "flex"
+
+     feedback[0].style.display = "flex"
+
+}
+

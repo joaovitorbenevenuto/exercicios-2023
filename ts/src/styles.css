@@ -426,7 +426,8 @@ content .discussion .discussion-header .dis {
   line-height: 25px;
 }
 content .discussion .discussion-base {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 content .discussion .discussion-base .text-1 {
   margin-top: 15px;
@@ -524,7 +525,7 @@ content .discussion .discussion-base hr {
 content .discussion .topic-1 {
   width: 1028px;
   height: 148px;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-left: 15px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -952,7 +953,7 @@ footer {
 }
 
 .topic-sended {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .topic-sended .sended-text {
@@ -1030,7 +1031,7 @@ footer {
 }
 
 .feedback {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 1028px;
   height: 148px;
