@@ -121,15 +121,15 @@ header .header-user .header-image-login-notification {
   height: 68px;
   flex-shrink: 0;
   background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
-  position: relative;
 }
 .side-bar .retangle h1 {
   display: flex;
   width: 178px;
   height: 68px;
-  left: 20px;
+  margin-left: 20px;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   flex-shrink: 0;
   color: #FFF;
   font-family: Roboto;
@@ -137,18 +137,15 @@ header .header-user .header-image-login-notification {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  position: relative;
 }
 .side-bar .side-bar-logo {
   width: 220px;
   height: 258px;
   flex-shrink: 0;
-  position: relative;
 }
 .side-bar .side-bar-menu {
   flex-shrink: 0;
   background: #FFF;
-  position: relative;
 }
 .side-bar .side-bar-menu .retangle-1 {
   width: 220px;
@@ -349,7 +346,7 @@ content .center-information .video .video-photo-2 {
 }
 content .resume {
   width: 1058px;
-  height: 189px;
+  height: auto;
   margin-top: 30px;
   margin-left: 263px;
   flex-shrink: 0;
@@ -377,8 +374,7 @@ content .resume .resume-header .r {
   line-height: 25px;
 }
 content .resume #resume-text {
-  margin-top: 15px;
-  margin-left: 15px;
+  padding: 15px;
   align-self: stretch;
   color: #5C5C5C;
   font-family: Quicksand;
@@ -398,13 +394,17 @@ content .resume #expand {
   letter-spacing: 0.28px;
 }
 content .discussion {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   margin-left: 263px;
+  padding-bottom: 15px;
   width: 1058px;
-  height: 621px;
+  height: auto;
   flex-shrink: 0;
   border-radius: 3px;
   border: 1px solid #ECECEC;
+  box-sizing: border-box;
 }
 content .discussion .discussion-header {
   height: 45px;
@@ -425,7 +425,10 @@ content .discussion .discussion-header .dis {
   font-weight: 500;
   line-height: 25px;
 }
-content .discussion .text-1 {
+content .discussion .discussion-base {
+  display: none;
+}
+content .discussion .discussion-base .text-1 {
   margin-top: 15px;
   margin-left: 324.5px;
   color: #ED7839;
@@ -435,7 +438,7 @@ content .discussion .text-1 {
   font-weight: 700;
   line-height: normal;
 }
-content .discussion .text-2 {
+content .discussion .discussion-base .text-2 {
   margin-top: 35px;
   margin-left: 216.5px;
   width: 626px;
@@ -446,38 +449,37 @@ content .discussion .text-2 {
   font-style: normal;
   font-weight: 400;
   line-height: 137.5%;
-  /* 19.25px */
 }
-content .discussion .discussion-icons {
+content .discussion .discussion-base .discussion-icons {
   display: flex;
 }
-content .discussion .discussion-icons .icon-1 {
+content .discussion .discussion-base .discussion-icons .icon-1 {
   margin-top: 27px;
   margin-left: 402.05px;
   width: 50.26px;
   height: 48.935px;
   flex-shrink: 0;
 }
-content .discussion .discussion-icons .icon-2 {
+content .discussion .discussion-base .discussion-icons .icon-2 {
   margin-top: 27px;
   margin-left: 51.74px;
   width: 50.26px;
   height: 48.935px;
   flex-shrink: 0;
 }
-content .discussion .discussion-icons .icon-3 {
+content .discussion .discussion-base .discussion-icons .icon-3 {
   margin-top: 27px;
   margin-left: 53.74px;
   width: 50.26px;
   height: 48.935px;
   flex-shrink: 0;
 }
-content .discussion .new-topic {
+content .discussion .discussion-base .button-new-topic {
   width: 133px;
   height: 32px;
   flex-shrink: 0;
 }
-content .discussion .new-topic #button-create {
+content .discussion .discussion-base .button-new-topic .button-create {
   background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
   display: flex;
@@ -490,14 +492,14 @@ content .discussion .new-topic #button-create {
   justify-content: center;
   text-align: center;
 }
-content .discussion .new-topic .icon-create {
+content .discussion .discussion-base .button-new-topic .icon-create {
   width: 17px;
   height: 17px;
   margin-top: 8px;
   margin-left: px;
   flex-shrink: 0;
 }
-content .discussion .new-topic .c {
+content .discussion .discussion-base .button-new-topic .c {
   margin-top: 7px;
   margin-left: 6px;
   color: #FFF;
@@ -508,7 +510,7 @@ content .discussion .new-topic .c {
   font-weight: 700;
   line-height: 16px;
 }
-content .discussion hr {
+content .discussion .discussion-base hr {
   position: absolute;
   width: 1027px;
   height: 0px;
@@ -713,11 +715,10 @@ content .discussion .topic-2 .count-answer {
 }
 
 footer {
-  position: absolute;
   width: 1086px;
   height: 181px;
   margin-top: 65px;
-  left: 234px;
+  margin-left: 234px;
 }
 
 .side-details .side-details-buttons {
@@ -859,22 +860,279 @@ footer {
   letter-spacing: 0.24px;
 }
 
+.creating-new-topic {
+  display: none;
+  flex-direction: column;
+}
+.creating-new-topic .creating-new-topic-text {
+  width: 965.375px;
+  color: #5C5C5C;
+  margin-top: 25px;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.creating-new-topic .assunto {
+  margin-left: 17.53px;
+  margin-top: 22px;
+  flex-shrink: 0;
+  color: #ED7839;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+.creating-new-topic #assunto {
+  display: flex;
+  width: 1025.515px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 11px;
+}
+.creating-new-topic .conteudo {
+  margin-left: 17.53px;
+  margin-top: 10px;
+  flex-shrink: 0;
+  color: #ED7839;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+.creating-new-topic #conteudo {
+  margin-left: 0px;
+  width: 1025.518px;
+  height: 113px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  background: #FFF;
+}
+.creating-new-topic .send-area {
+  width: 1025.518px;
+  height: 31px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #CCC;
+  background: #EAF1F2;
+}
+.creating-new-topic .send {
+  width: 205.104px;
+  height: 31px;
+  margin-left: 818.87px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 4px 0px;
+  border: transparent;
+  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  color: #FFF;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.topic-sended {
+  display: flex;
+  flex-direction: column;
+}
+.topic-sended .sended-text {
+  width: 537.958px;
+  margin-top: 15px;
+  margin-left: 246.99px;
+  color: #ED7839;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topic-sended .thanks {
+  width: 805.246px;
+  margin-top: 18px;
+  margin-left: 113.34px;
+  color: #595959;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+.topic-sended .discover {
+  width: 306.196px;
+  margin-top: 29px;
+  margin-left: 363.71px;
+  color: #F48F44;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  text-decoration-line: underline;
+}
+.topic-sended .button-create-final {
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin-top: 47px;
+  margin-left: 411.08px;
+  width: 235.145px;
+  height: 32px;
+  flex-shrink: 0;
+  justify-content: center;
+  text-align: center;
+}
+.topic-sended .button-text {
+  margin-top: 7px;
+  margin-left: 6px;
+  color: #FFF;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.topic-sended hr {
+  position: absolute;
+  width: 1027px;
+  height: 0px;
+  margin-top: 189px;
+  margin-left: 16px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  opacity: 30%;
+  z-index: -1;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  width: 1028px;
+  height: 148px;
+  margin-top: 15px;
+  margin-left: 14px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #E7E7E7;
+  align-items: center;
+}
+.feedback .topic-created {
+  position: absolute;
+  width: 1028px;
+  height: 148px;
+  margin-top: 0px;
+  margin-left: 0px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #E7E7E7;
+  background: #FFF;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+  z-index: -1;
+}
+.feedback .topic-created .subject {
+  margin-top: 17px;
+  margin-left: 24.17px;
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.feedback .topic-created .author {
+  width: 542.071px;
+  margin-left: 24.17px;
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.feedback .topic-created .content {
+  width: 980.669px;
+  margin-top: 17px;
+  margin-left: 24.17px;
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.feedback .feedback-background {
+  position: absolute;
+  width: 1028px;
+  height: 148px;
+  background: #DDD;
+  z-index: -1;
+  opacity: 93%;
+  -webkit-backdrop-filter: blur(100%);
+          backdrop-filter: blur(100%);
+}
+.feedback .feedback-logo {
+  width: 30.917px;
+  height: 23.22px;
+  margin-top: 35px;
+  flex-shrink: 0;
+  color: #707070;
+  font-family: Font Awesome 5 Free;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.feedback .feedback-text {
+  width: 414.292px;
+  margin-top: 7.78px;
+  margin-left: 26.28px;
+  color: #707070;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.feedback .edit-topic {
+  width: 122.123px;
+  margin-top: 8p x;
+  color: #ED7839;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: 0;
-}
-
-svg {
-  width: 100%;
-}
-
-img {
-  width: 100%;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

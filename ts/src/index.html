@@ -18,14 +18,15 @@
       </div>
       <img class="side-bar-logo" src="/ts/src/assets/images/side-bar/dewey 4.png">
       <ul class="side-bar-menu">
-        <li class="retangle-1"><a href="#">Apresentação</a></li>
-        <li class="retangle-2"><a href="#">Comitês</a></li>
-        <li class="retangle-3"><a href="#">Autores</a></li>
-        <li class="retangle-4"><a href="#">Eixos temáticos</a></li>
-        <li class="retangle-5"><a href="#">Trabalhos</a></li>
-        <li class="retangle-6"><a href="#">Contato</a></li>
+        <li class="retangle-1"><a href="#"><b>Apresentação</b></a></li>
+        <li class="retangle-2"><a href="#"><b>Comitês</b></a></li>
+        <li class="retangle-3"><a href="#"><b>Autores</b></a></li>
+        <li class="retangle-4"><a href="#"><b>Eixos temáticos</b></a></li>
+        <li class="retangle-5"><a href="#"><b>Trabalhos</b></a></li>
+        <li class="retangle-6"><a href="#"><b>Contato</b></a></li>
       </ul>
     </nav>
+
     <header>
       <div class="header-bar">
         <div class="header-texts">
@@ -131,7 +132,7 @@
           non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum
           Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin
           ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan
-          sit ametl accumsant... ver mais
+          sit ametl accumsant...
           <a id="expand" onclick="expandResume()">ver mais</a>
         </div>
         <!-- <div id="expansive-text"><a id="ver-mais" onclick="retryResume()">ver mais</a>
@@ -141,29 +142,64 @@
         <div class="discussion-header">
           <p class="dis"><b>Discussões</b></p>
         </div>
-        <p class="text-1">Compartilhe suas ideias ou dúvidas com os autores!</p>
-        <div class="discussion-icons">
-          <img class="icon-1" src="/ts/src/assets/icons/content/icone-1.svg">
-          <img class="icon-2" src="/ts/src/assets/icons/content/icone-2.svg">
-          <img class="icon-3" src="/ts/src/assets/icons/content/icone-3.svg">
+        <div class="discussion-base">
+          <p class="text-1">Compartilhe suas ideias ou dúvidas com os autores!</p>
+          <div class="discussion-icons">
+            <img class="icon-1" src="/ts/src/assets/icons/content/icone-1.svg">
+            <img class="icon-2" src="/ts/src/assets/icons/content/icone-2.svg">
+            <img class="icon-3" src="/ts/src/assets/icons/content/icone-3.svg">
+          </div>
+          <p class="text-2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe
+            seus questionamentos ou sugestões para o autor!</p>
+          <div class="button-new-topic">
+            <button class="button-create" onclick="criarNovoTopico">
+              <img class="icon-create" src="/ts/src/assets/icons/content/icon-criar.svg">
+              <p class="c">criar tópico</p>
+            </button>
+            <hr>
+          </div>
         </div>
-        <p class="text-2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe
-          seus questionamentos ou sugestões para o autor!</p>
+        <div class="creating-new-topic">
+          <p class="creating-new-topic-text">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+          <form class="campos">
 
-        <div class="new-topic">
-          <button id="button-create" onclick="criarNovoTopico">
-            <!-- <img class="button-create" src="/ts/src/assets/icons/content/button-bg.svg"> -->
-            <img class="icon-create" src="/ts/src/assets/icons/content/icon-criar.svg">
-            <p class="c">criar tópico</p>
+            <label class="assunto" for="assunto">Assunto
+              <textarea id="assunto" name=assunto onfocus="this.value=''">
+            Defina um tópico sucinto para notificar os autores...
+              </textarea>
+            </label>
+            <label class="conteudo" for="conteudo">Conteúdo
+              <textarea id="conteudo" name="conteudo" input="submit">
+              </textarea>
+              <div class="send-area"><button class="send">Enviar</button></div>
+            </label>
+          </form>
+          <!-- <div class="send-area"> <button class="send"></button></div> -->
+        </div>
+        <div class="topic-sended">
+          <p class="sended-text">Seu tópico foi enviado com sucesso! :D</p>
+          <p class="thanks">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu
+            tópico for respondido!</p>
+          <a class="discover">Descubra outros trabalhos!</a>
+          <button class="button-create-final" onclick="criarNovoTopico">
+            <p class="button-text">criar novo tópico</p>
           </button>
           <hr>
         </div>
-        <!-- <div class="feedback">
-          <img class="feedback-logo">
-          <p></p>
-          <a></a>
-        </div>-->
-        <section class="topic-1">
+        <div class="feedback">
+          <div class="topic-created">
+            <p class="subject">Assunto da pergunta aparece aqui</p>
+            <p class="author">Carlos Henrique Santos</p>
+            <p class="content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+              dimensão e
+              impacto de processo formativo situado impacto de processo formativo processo...</p>
+          </div>
+          <div class="feedback-background"></div>
+          <img class="feedback-logo" src="/ts/src/assets/icons/content/feedback.png">
+          <p class="feedback-text">Aguardando feedback dos autores</p>
+          <a class="edit-topic">Editar tópico</a>
+        </div>
+        <div class="topic-1">
           <p class="subject">Assunto da pergunta aparece aqui</p>
           <p class="author">Carlos Henrique Santos</p>
           <p class="content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
@@ -178,8 +214,8 @@
             <span class="count-like"> 1 like</span>
             <span class="count-answer"> 1 resposta</span>
           </div>
-        </section>
-        <section class="topic-2">
+        </div>
+        <div class="topic-2">
           <p class="subject">Assunto da pergunta aparece aqui</p>
           <p class="author">Carlos Henrique Santos</p>
           <p class="content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
@@ -194,9 +230,10 @@
             <span class="count-like"> 1 like</span>
             <span class="count-answer"> 1 resposta</span>
           </div>
-        </section>
-      </content>
+        </div>
+      </section>
       <footer><img src="/ts/src/assets/images/footer/imagem-footer.png"></footer>
+    </content>
     <script src="ts/src/script.js"></script>
   </app-root>
 </body>
