@@ -121,7 +121,6 @@
             }
 
             .e {
-                position: relative;
                 margin-top: 15px;
                 margin-left: 15px;
                 color: #5C5C5C;
@@ -129,13 +128,21 @@
                 font-size: 12px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 120%;
+                line-height: 18px;
                 letter-spacing: 0.24px;
             }
 
-            .e b {
+            .autores {
+                margin-top: 10px;
+                margin-left: 15px;
+                color: #5C5C5C;
+                font-family: Quicksand;
                 font-size: 14px;
-                font-weight: 700;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.24px;
+
             }
 
             .referencias {
@@ -147,18 +154,37 @@
                 font-size: 12px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 12px;
+                line-height: 15px;
                 letter-spacing: 0.24px;
             }
 
-            // .painel-scroll {
-            //     .rentangle-out{
+            .painel-scroll {
 
-            //     }
-            //     .retangle-in{
+                .scroll-box {
+                    position: absolute;
+                    width: 3px;
+                    height: 367px;
+                    top: 216px;
+                    left: 1312px;
+                    flex-shrink: 0;
+                    border-radius: 5px;
+                    background: #E7E7E7;
+                    z-index: -1;
+                }
 
-            //     }
-            // }
+                .scroll {
+                    position: absolute;
+                    width: 3px;
+                    height: 200px;
+                    top: 216px;
+                    left: 1312px;
+                    flex-shrink: 0;
+                    border-radius: 5px;
+                    background: #BFBFBF;
+
+                    z-index: 1;
+                }
+            }
         }
     }
 }

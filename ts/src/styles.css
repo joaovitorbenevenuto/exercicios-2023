@@ -199,6 +199,7 @@ header .header-user .header-image-login-notification {
   box-shadow: 0px 2px #E7E7E7;
 }
 .side-bar .side-bar-menu .retangle-4 a {
+  margin-top: 7px;
   margin-left: 29px;
   color: #725C5C;
   font-family: Quicksand;
@@ -210,11 +211,21 @@ header .header-user .header-image-login-notification {
 .side-bar .side-bar-menu .retangle-5 {
   width: 220px;
   height: 33px;
-  margin-top: 7px;
+  margin-top: 1px;
   box-shadow: 0px 2px #E7E7E7;
+  background: #FDF1EB;
+  display: flex;
+}
+.side-bar .side-bar-menu .retangle-5 .selection {
+  width: 5px;
+  height: 33px;
+  top: 0px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
 }
 .side-bar .side-bar-menu .retangle-5 a {
-  margin-left: 29px;
+  margin-left: 24px;
+  margin-top: 7px;
   color: #725C5C;
   font-family: Quicksand;
   font-size: 15px;
@@ -833,7 +844,6 @@ footer {
   text-align: left;
 }
 .side-details .details .painel .e {
-  position: relative;
   margin-top: 15px;
   margin-left: 15px;
   color: #5C5C5C;
@@ -841,12 +851,19 @@ footer {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 18px;
   letter-spacing: 0.24px;
 }
-.side-details .details .painel .e b {
+.side-details .details .painel .autores {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #5C5C5C;
+  font-family: Quicksand;
   font-size: 14px;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.24px;
 }
 .side-details .details .painel .referencias {
   margin-top: 15px;
@@ -857,8 +874,30 @@ footer {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 15px;
   letter-spacing: 0.24px;
+}
+.side-details .details .painel .painel-scroll .scroll-box {
+  position: absolute;
+  width: 3px;
+  height: 367px;
+  top: 216px;
+  left: 1312px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #E7E7E7;
+  z-index: -1;
+}
+.side-details .details .painel .painel-scroll .scroll {
+  position: absolute;
+  width: 3px;
+  height: 200px;
+  top: 216px;
+  left: 1312px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #BFBFBF;
+  z-index: 1;
 }
 
 .creating-new-topic {
@@ -1129,6 +1168,251 @@ footer {
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
+}
+
+.discussion-expand {
+  margin-left: 15px;
+}
+.discussion-expand .topic-3 {
+  width: 1028px;
+  height: 131px;
+  flex-shrink: 0;
+  border: 1px solid #E7E7E7;
+  background: #F8F8F8;
+}
+.discussion-expand .topic-3 .topic-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  margin-left: 23.19px;
+}
+.discussion-expand .topic-3 .topic-content .autor {
+  width: 542.599px;
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-3 .topic-content .conteudo {
+  width: 981.624px;
+  margin-top: 10px;
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.discussion-expand .topic-3 .topic-writer {
+  position: absolute;
+  display: flex;
+  width: 38.037px;
+  margin-top: 18px;
+  margin-left: 902.78px;
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-3 .topic-writer .logo-area {
+  width: 30.917px;
+  height: 23.22px;
+  margin-left: 33.07px;
+  flex-shrink: 0;
+  align-items: left;
+}
+.discussion-expand .topic-3 .topic-writer .logo-area .topic-logo {
+  color: #ED7839;
+  font-family: Font Awesome 5 Free;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.discussion-expand .topic-4 {
+  width: 1028px;
+  height: 131px;
+  flex-shrink: 0;
+  border: 1px solid #E7E7E7;
+  background: #FFFFFF;
+}
+.discussion-expand .topic-4 .topic-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  margin-left: 23.19px;
+}
+.discussion-expand .topic-4 .topic-content .autor {
+  width: 542.599px;
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-4 .topic-content .conteudo {
+  width: 981.624px;
+  margin-top: 10px;
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.discussion-expand .topic-4 .topic-writer {
+  position: absolute;
+  display: flex;
+  width: 38.037px;
+  margin-top: 18px;
+  margin-left: 902.78px;
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-4 .topic-writer .logo-area {
+  width: 30.917px;
+  height: 23.22px;
+  margin-left: 33.07px;
+  flex-shrink: 0;
+  align-items: left;
+}
+.discussion-expand .topic-4 .topic-writer .logo-area .topic-logo {
+  color: #ED7839;
+  font-family: Font Awesome 5 Free;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.discussion-expand .topic-5 {
+  width: 1028px;
+  height: 184px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  border: 1px solid #E7E7E7;
+  background: #F8F8F8;
+}
+.discussion-expand .topic-5 .topic-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  margin-left: 23.19px;
+}
+.discussion-expand .topic-5 .topic-content .autor {
+  width: 542.599px;
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-5 .topic-content .conteudo {
+  width: 981.624px;
+  margin-top: 10px;
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.discussion-expand .topic-5 .topic-writer {
+  position: absolute;
+  display: flex;
+  width: 38.037px;
+  margin-top: 18px;
+  margin-left: 902.78px;
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-5 .topic-writer .logo-area {
+  width: 30.917px;
+  height: 23.22px;
+  margin-left: 33.07px;
+  flex-shrink: 0;
+  align-items: left;
+}
+.discussion-expand .topic-5 .topic-writer .logo-area .topic-logo {
+  color: #ED7839;
+  font-family: Font Awesome 5 Free;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.discussion-expand .topic-6 {
+  width: 1028px;
+  height: 131px;
+  flex-shrink: 0;
+  border: 1px solid #E7E7E7;
+  background: #F8F8F8;
+}
+.discussion-expand .topic-6 .topic-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  margin-left: 23.19px;
+}
+.discussion-expand .topic-6 .topic-content .autor {
+  width: 542.599px;
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-6 .topic-content .conteudo {
+  width: 981.624px;
+  margin-top: 10px;
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.discussion-expand .topic-6 .topic-writer {
+  position: absolute;
+  display: flex;
+  width: 38.037px;
+  margin-top: 18px;
+  margin-left: 902.78px;
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.discussion-expand .topic-6 .topic-writer .logo-area {
+  width: 30.917px;
+  height: 23.22px;
+  margin-left: 33.07px;
+  flex-shrink: 0;
+  align-items: left;
+}
+.discussion-expand .topic-6 .topic-writer .logo-area .topic-logo {
+  color: #ED7839;
+  font-family: Font Awesome 5 Free;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 
 * {
